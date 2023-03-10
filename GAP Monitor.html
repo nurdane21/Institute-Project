@@ -24,6 +24,31 @@
             width: 90%;
             list-style-type:none
         }
+        #platforma{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        }
+        #ikonatDiv{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        }
+.nav-link{
+
+  border: none;
+  padding: none;
+}
+
+a:hover {
+  background-color: lightgray;
+}
     
 hr{
     
@@ -48,328 +73,341 @@ h3 {
     <!--Pjesa e Navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <img src="images/logo2.png" width="140px", height="140px">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button>
+          <img src="images/logo2.png" width="140px", height="140px">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Ballina</a>
-            </li>
-            <li>
-                <a class="nav-link active" aria-current="page" href="#">Lajme</a>
-            </li>
-            <li>
-                <a class="nav-link active" aria-current="page" href="#">Publikime</a>
-            </li>
-            <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Ballina</a>
+              </li>
+              <li>
+                <a class="nav-link active" aria-current="page" href="Lajme.html">Lajme</a>
+              </li>
+              <li>
+                <a class="nav-link active" aria-current="page" href="Publikime.html">Publikime</a>
+              </li>
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Rreth GAP
+                  Rreth GAP
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Stafi</a></li>
-                <li><a class="dropdown-item" href="#">Bashkëpunëtorët e jashtëm</a></li>
-                <li><a class="dropdown-item" href="#">Bordi Këshilldhënës
+                  <li><a class="dropdown-item" href="#">Stafi</a></li>
+                  <li><a class="dropdown-item" href="#">Bashkëpunëtorët e jashtëm</a></li>
+                  <li><a class="dropdown-item" href="#">Bordi Këshilldhënës
                 </a></li><li><a class="dropdown-item" href="#">Pasqyrat financiare
                 </a></li>
                 </a></li><li><a class="dropdown-item" href="#">Rekrutimet
                 </a></li>
                 </ul>
-            </li>
-            <li class="nav-item dropdown">
+              </li>
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     GAP në:
                 </a>
                 <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Politika Publike</a></li>
-                <li><a class="dropdown-item" href="#">Media</a></li>
-                <li><a class="dropdown-item" href="#">Video </a></li>
+                  <li><a class="dropdown-item" href="#">Politika Publike</a></li>
+                  <li><a class="dropdown-item" href="#">Media</a></li>
+                  <li><a class="dropdown-item" href="#">Video </a></li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Infografika</a>
+              </li>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Infografika.html">Infografika</a>
                 </li>
-            <li>
-                    <a class="nav-link active" aria-current="page" href="#">GAP Monitor</a>
-             </li>
-            <li>
-            <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-        </div>
-    </nav>
-    <!--GAP Monitor-->
-    <div class="container d-flex" id="#headDiv" >
-        <div class="col-9 d-flex">
-            <div class="container">
-                <div class="container col-12" >
-                    <h3 class="col-12">GAP Monitor</h3>
-                    <hr>
-                </div>
-            <!--Ana e majte-->
-            <div class="container col-12"  >
-                <div class="container d-flex">
-                    <div class="col-4">
-                        <div class="container">
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-3" style="max-width: 540px;">
-                                    <img src="images/monitor1.jpeg" class="card-img-bottom">
-                                    <a href="https://www.institutigap.org/lajme/2822"><h6>Thirrje për aplikim: 8 praktikantë me pagesë në Instituti GAP dhe K2.0</h6></a>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor4.png" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor7.jpg" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor10.png" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Ana  e mesme-->
-                    <div class="col-4">
-                        <div class="container">
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor2.png" class="card-img-bottom">
-                                    <a href="https://www.institutigap.org/lajme/2696"><h6>Mësimi në distancë në kohë pandemie: rast studimi në komunën e Prizrenit, Obiliqit dhe Hanit të Elezit</h6></a>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor5.png" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor8.jpg" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor11.png" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                     </div>
-                    
-                    <!--Ana e djathte-->
-                    <div class="col-4">
-                        <div class="container">
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor3.png" class="card-img-bottom">
-                                    <a href="https://www.institutigap.org/lajme/2694"><h6>Përfshirja e grave, të rinjëve dhe komuniteteve jo-shumicë në Pakon për Rimëkëmbje Ekonomike</h6></a>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor6.jpg" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor9.jpg" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="row row-cols-1 row-cols-md-8 g-6">
-                                <div class="col">
-                                    <div class="card mb-5" style="max-width: 540px;">
-                                    <img src="images/monitor12.png" class="card-img-bottom">
-                                    </div>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <nav aria-label="...">
-                <ul class="pagination pagination-sm">
-                  <li class="page-item active" aria-current="page">
-                    <span class="page-link">1</span>
+                <li>
+                    <a class="nav-link active" aria-current="page" href="GAP Monitor.html">GAP Monitor</a>
                   </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item"><a class="page-link" href="#">7</a></li>
-                  <li class="page-item"><a class="page-link" href="#">8</a></li>
-                  <li class="page-item"><a class="page-link" href="#">9</a></li>
-                  <li class="page-item"><a class="page-link" href="#">10</a></li>
-                  <li class="page-item"><a class="page-link" href="#">11</a></li>
-                  <li class="page-item"><a class="page-link" href="#">12</a></li>
-                  <li class="page-item"><a class="page-link" href="#">13</a></li>
-                  <li class="page-item"><a class="page-link" href="#">14</a></li>
-                  <li class="page-item"><a class="page-link" href="#">15</a></li>
-                  <li class="page-item"><a class="page-link" href="#">16</a></li>
-                  <li class="page-item"><a class="page-link" href="#">17</a></li>
-                  <li class="page-item"><a class="page-link" href="#">18</a></li>
-                  <li class="page-item"><a class="page-link" href="#">19</a></li>
-                  <li class="page-item"><a class="page-link" href="#">20</a></li>
-                  <li class="page-item"><a class="page-link" href="#">21</a></li>
-                  <li class="page-item"><a class="page-link" href="#">22</a></li>
-                  <li class="page-item"><a class="page-link" href="#">23</a></li>
-                  <li class="page-item"><a class="page-link" href="#">24</a></li>
-                  <li class="page-item"><a class="page-link" href="#">25</a></li>
-                  <li class="page-item"><a class="page-link" href="#">26</a></li>
-                  <li class="page-item"><a class="page-link" href="#">27</a></li>
-                  <li class="page-item"><a class="page-link" href="#">28</a></li>
-                  <li class="page-item"><a class="page-link" href="#">29</a></li>
-                  <li class="page-item"><a class="page-link" href="#">30</a></li>
-        
+                <li>
                 </ul>
-              </nav>
-               
+             <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass"></i></button>
+               </form>
+          </div>
         </div>
-    </div>
-    <!--Pjesa e publikime-->
-    <div class="col-3 d-flex" >
-        <div class="container d-flex" id="platforma">
-            <div class="container" >
-                <h3 class="col-12" >Publikimet</h3>
+      </nav>
+    <!--GAP Monitor-->
+ <!--GAP Monitor-->
+ <div class="container d-flex" id="#headDiv" >
+    <div class="col-9 d-flex">
+        <div class="container">
+            <div class="container col-12" >
+                <h3 class="col-12">GAP Monitor</h3>
                 <hr>
             </div>
-            <div class="container text-center d-flex" id="ikonatDiv">
-                    <div class="col-2">
-                        <h4 class="text-center">Platforma buxhetore</h4>
-                        <span><i class="fa fa-sack-dollar fa-5x"></i></span>
+        <!--Ana e majte-->
+        <div class="container col-12"  >
+            <div class="container d-flex">
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                <img src="images/monitor1.jpeg" class="card-img-bottom">
+                                <a href="https://www.institutigap.org/lajme/2822"><h6>Thirrje për aplikim: 8 praktikantë me pagesë në Instituti GAP dhe K2.0</h6></a>
+                                </div>
+                              </div>
                         </div>
-                    <div class="col-2">
-                        <div class="container text-center" id="ikon2"></div>
-                        <h4 class="text-center">Ekonomia e veturave</h4>
-                        <span><i class="fa fa-car-side fa-5x"></i></span>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor4.png" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor7.jpg" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor10.png" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <h4 class="text-center">Leternjoftimi i komunave</h4>
-                        <span><i class="fa fa-map fa-5x"></i></span>
+                </div>
+                <!--Ana  e mesme-->
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor2.png" class="card-img-bottom">
+                                <a href="https://www.institutigap.org/lajme/2696"><h6>Mësimi në distancë në kohë pandemie: rast studimi në komunën e Prizrenit, Obiliqit dhe Hanit të Elezit</h6></a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor5.png" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor8.jpg" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor11.png" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <h4 class="text-center">Agjenda per reforma evropiane</h4>
-                        <span><i class="fa fa-mask fa-5x"></i></span>
+                 </div>
+                
+                <!--Ana e djathte-->
+                <div class="col-4">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor3.png" class="card-img-bottom">
+                                <a href="https://www.institutigap.org/lajme/2694"><h6>Përfshirja e grave, të rinjëve dhe komuniteteve jo-shumicë në Pakon për Rimëkëmbje Ekonomike</h6></a>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor6.jpg" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor9.jpg" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-md-8 g-6">
+                            <div class="col">
+                                <div class="card mb-5" style="max-width: 540px;">
+                                <img src="images/monitor12.png" class="card-img-bottom">
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <div class="col-2">
-                        <h4 class="text-center">Transparenca buxhetore e komunave</h4>
-                        <span><i class="fa fa-balance-scale fa-5x"></i></span>
-                    </div>
-              </div>
-        </div>  
+                </div>
+            </div>
+        </div>
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item"><a class="page-link" href="#">8</a></li>
+              <li class="page-item"><a class="page-link" href="#">9</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item"><a class="page-link" href="#">11</a></li>
+              <li class="page-item"><a class="page-link" href="#">12</a></li>
+              <li class="page-item"><a class="page-link" href="#">13</a></li>
+              <li class="page-item"><a class="page-link" href="#">14</a></li>
+              <li class="page-item"><a class="page-link" href="#">15</a></li>
+              <li class="page-item"><a class="page-link" href="#">16</a></li>
+              <li class="page-item"><a class="page-link" href="#">17</a></li>
+              <li class="page-item"><a class="page-link" href="#">18</a></li>
+              <li class="page-item"><a class="page-link" href="#">19</a></li>
+              <li class="page-item"><a class="page-link" href="#">20</a></li>
+              <li class="page-item"><a class="page-link" href="#">21</a></li>
+              <li class="page-item"><a class="page-link" href="#">22</a></li>
+              <li class="page-item"><a class="page-link" href="#">23</a></li>
+              <li class="page-item"><a class="page-link" href="#">24</a></li>
+              <li class="page-item"><a class="page-link" href="#">25</a></li>
+              <li class="page-item"><a class="page-link" href="#">26</a></li>
+              <li class="page-item"><a class="page-link" href="#">27</a></li>
+              <li class="page-item"><a class="page-link" href="#">28</a></li>
+              <li class="page-item"><a class="page-link" href="#">29</a></li>
+              <li class="page-item"><a class="page-link" href="#">30</a></li>
+    
+            </ul>
+          </nav>
+           
     </div>
 </div>
-<div class="container d-flex" id="#footDiv" >
-    <div class="col-6 d-flex">
-        <div class="container">
-            <div class="container col-12" >
-                <h3>GAP video</h3>
-                <hr>
-            </div>
-            <!--Ana e majte-->
-              <div class="container col-12" >
-                <div class="container d-flex">
-                    <div class="col-6">
-                        <div class="container">
-                            <figure class="figure">
-                                <img src="images/video2.png" class="figure-img img-fluid rounded">
-                                <a href="https://www.institutigap.org/lajme/3033"><p>Çfarë kompetenca kanë aktualisht komunat me shumicë serbe?</p></a>
-                            </figure>
-                            <figure class="figure">
-                                <img src="images/video3.png" class="figure-img img-fluid rounded"> 
-                                <a href="https://www.institutigap.org/lajme/3012"><p>Pas gati dy vjetësh qeverisjeje, granti i katërt për komunat as në agjendë</p></a>
-                            </figure>
-                         </div>
-                    </div>
-                    <!--Ana e djathte-->
-                    <div class="col-6">
-                        <div class="container">
-                            <figure class="figure">
-                                <img src="images/video1.png" class="figure-img img-fluid rounded">
-                                <a href="https://www.institutigap.org/lajme/3029"><p>Qytetarët me obligime ndaj komunave, mbi 120 milionë euro borxhe të tatimit në pronë</p></a>
-                            </figure>
-                            <figure class="figure">
-                                <img src="images/video4.png" class="figure-img img-fluid rounded">
-                                <a href="https://www.institutigap.org/lajme/3010"><p>Një vit luftë me inflacionin: Cilat janë parashikimet për 2023-shin?</p></a>
-                            </figure>
-                         </div>
-                    </div>
-                </div>
-               </div>
-           
-              
+<!--Pjesa e publikime-->
+<div class="col-3 d-flex" >
+    <div class="container d-flex" id="platforma">
+        <div class="container" >
+            <h3 class="col-12" >Platformat</h3>
+            <hr>
         </div>
-    </div> 
-   
-<!--Pjesa e GAP politika publike-->     
-    <div class="col-6 d-flex">
-        <div class="container">
-            <div class="container col-12" >
-                <h3>GAP politika publike</h3>
-                <hr>
-            </div>
-              <!--Ana e majte-->
-              <div class="container col-12" >
-                <div class="container d-flex">
-                    <div class="col-6">
-                        <div class="container">
-                            <figure class="figure">
-                                <img src="images/publike1.jpg" class="figure-img img-fluid rounded">
-                                <figcaption class="figure-caption">Komentet e Institutit GAP në Projektligjin për Inspektoratin e Punës</figcaption>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publike3.jpg" class="figure-img img-fluid rounded">
-                                <figcaption class="figure-caption">Sekretariati i Komunitetit të Energjisë nis procedurën për zgjidhjen e mosmarrëveshjës lidhur me projektin "Kosova e Re"</figcaption>
-                              </figure>
-                         </div>
+        <div class="container text-center d-flex" id="ikonatDiv">
+                <div class="col-2">
+                    <h4 class="text-center">Platforma buxhetore</h4>
+                    <span><i class="fa fa-sack-dollar fa-5x"></i></span>
                     </div>
-                    <!--Ana e djathte-->
-                    <div class="col-6">
-                        <div class="container">
-                            <figure class="figure">
-                                <img src="images/publike2.jpg" class="figure-img img-fluid rounded">
-                                <figcaption class="figure-caption text-end">Komentet e Institutit GAP për Projektligjin për financat e pushtetit lokal</figcaption>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publike4.jpg" class="figure-img img-fluid rounded" >
-                                <figcaption class="figure-caption text-end">Pas komenteve të Institutit GAP, MZHE anulon procedimin e Koncept dokumentit për agjencinë e participimeve të Kosovës</figcaption>
-                              </figure>
-                         </div>
-                    </div>
+                <div class="col-2">
+                    <div class="container text-center" id="ikon2"></div>
+                    <h4 class="text-center">Ekonomia e veturave</h4>
+                    <span><i class="fa fa-car-side fa-5x"></i></span>
                 </div>
-               </div>
-    </div>   
+                <div class="col-2">
+                    <h4 class="text-center">Leternjoftimi i komunave</h4>
+                    <span><i class="fa fa-map fa-5x"></i></span>
+                </div>
+                <div class="col-2">
+                    <h4 class="text-center">Agjenda per reforma evropiane</h4>
+                    <span><i class="fa fa-mask fa-5x"></i></span>
+                </div>
+                <div class="col-2">
+                    <h4 class="text-center">Transparenca buxhetore e komunave</h4>
+                    <span><i class="fa fa-balance-scale fa-5x"></i></span>
+                </div>
+          </div>
+    </div>  
 </div>
+</div>
+<!--Pjesa e Gap Video-->
+<div class="container d-flex" id="#footDiv" >
+<div class="col-6 d-flex">
+    <div class="container">
+        <div class="container col-12" >
+            <h3>GAP video</h3>
+            <hr>
+        </div>
+        <!--Ana e majte-->
+          <div class="container col-12" >
+            <div class="container d-flex">
+                <div class="col-6">
+                    <div class="container">
+                        <figure class="figure">
+                            <img src="images/video2.png" class="figure-img img-fluid rounded">
+                            <a href="https://www.institutigap.org/lajme/3033"><p>Çfarë kompetenca kanë aktualisht komunat me shumicë serbe?</p></a>
+                        </figure>
+                        <figure class="figure">
+                            <img src="images/video3.png" class="figure-img img-fluid rounded"> 
+                            <a href="https://www.institutigap.org/lajme/3012"><p>Pas gati dy vjetësh qeverisjeje, granti i katërt për komunat as në agjendë</p></a>
+                        </figure>
+                     </div>
+                </div>
+                <!--Ana e djathte-->
+                <div class="col-6">
+                    <div class="container">
+                        <figure class="figure">
+                            <img src="images/video1.png" class="figure-img img-fluid rounded">
+                            <a href="https://www.institutigap.org/lajme/3029"><p>Qytetarët me obligime ndaj komunave, mbi 120 milionë euro borxhe të tatimit në pronë</p></a>
+                        </figure>
+                        <figure class="figure">
+                            <img src="images/video4.png" class="figure-img img-fluid rounded">
+                            <a href="https://www.institutigap.org/lajme/3010"><p>Një vit luftë me inflacionin: Cilat janë parashikimet për 2023-shin?</p></a>
+                        </figure>
+                     </div>
+                </div>
+            </div>
+           </div>
+       
+          
+    </div>
+</div> 
+
+<!--Pjesa e GAP politika publike-->     
+<div class="col-6 d-flex">
+    <div class="container">
+        <div class="container col-12" >
+            <h3>GAP politika publike</h3>
+            <hr>
+        </div>
+          <!--Ana e majte-->
+          <div class="container col-12" >
+            <div class="container d-flex">
+                <div class="col-6">
+                    <div class="container">
+                        <figure class="figure">
+                            <img src="images/publike1.jpg" class="figure-img img-fluid rounded">
+                            <figcaption class="figure-caption">Komentet e Institutit GAP në Projektligjin për Inspektoratin e Punës</figcaption>
+                          </figure>
+                          <figure class="figure">
+                            <img src="images/publike3.jpg" class="figure-img img-fluid rounded">
+                            <figcaption class="figure-caption">Sekretariati i Komunitetit të Energjisë nis procedurën për zgjidhjen e mosmarrëveshjës lidhur me projektin "Kosova e Re"</figcaption>
+                          </figure>
+                     </div>
+                </div>
+                <!--Ana e djathte-->
+                <div class="col-6">
+                    <div class="container">
+                        <figure class="figure">
+                            <img src="images/publike2.jpg" class="figure-img img-fluid rounded">
+                            <figcaption class="figure-caption text-end">Komentet e Institutit GAP për Projektligjin për financat e pushtetit lokal</figcaption>
+                          </figure>
+                          <figure class="figure">
+                            <img src="images/publike4.jpg" class="figure-img img-fluid rounded" >
+                            <figcaption class="figure-caption text-end">Pas komenteve të Institutit GAP, MZHE anulon procedimin e Koncept dokumentit për agjencinë e participimeve të Kosovës</figcaption>
+                          </figure>
+                     </div>
+                </div>
+            </div>
+           </div>
+</div>   
+</div>
+
+
+ 
+   
+         
+         
+                        
+
+
     
    
      

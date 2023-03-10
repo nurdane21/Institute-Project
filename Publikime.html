@@ -49,6 +49,11 @@ h4.col-12 {
     color: #f7931d;
     
 }
+.nav-link{
+  
+  border: none;
+  padding: none;
+}
 h4 {
     display: block;
     font-size: 1.5em;
@@ -58,64 +63,83 @@ h4 {
     margin-inline-end: 0px;
     font-weight: bold;
 } 
+a{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  text-decoration: none;
+}
 
+a:hover {
+  background-color: lightgray;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+h6{
+  font-weight: bold;
+}
         
     </style>
     <!--Pjesa e navbar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+      <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
         <img src="images/logo2.png" width="140px", height="140px">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Ballina</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Ballina</a>
             </li>
             <li>
-                <a class="nav-link active" aria-current="page" href="#">Lajme</a>
+              <a class="nav-link active" aria-current="page" href="Lajme.html">Lajme</a>
             </li>
             <li>
-                <a class="nav-link active" aria-current="page" href="#">Publikime</a>
+              <a class="nav-link active" aria-current="page" href="Publikime.html">Publikime</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Rreth GAP
-                </a>
-                <ul class="dropdown-menu">
+              </a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Stafi</a></li>
                 <li><a class="dropdown-item" href="#">Bashkëpunëtorët e jashtëm</a></li>
                 <li><a class="dropdown-item" href="#">Bordi Këshilldhënës
-                </a></li><li><a class="dropdown-item" href="#">Pasqyrat financiare
-                </a></li>
-                </a></li><li><a class="dropdown-item" href="#">Rekrutimet
-                </a></li>
-                </ul>
+              </a></li><li><a class="dropdown-item" href="#">Pasqyrat financiare
+              </a></li>
+              </a></li><li><a class="dropdown-item" href="#">Rekrutimet
+              </a></li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    GAP në:
-                </a>
-                <ul class="dropdown-menu">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GAP në:
+              </a>
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Politika Publike</a></li>
                 <li><a class="dropdown-item" href="#">Media</a></li>
                 <li><a class="dropdown-item" href="#">Video </a></li>
-                </ul>
+              </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Infografika</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Infografika.html">Infografika</a>
+              </li>
+              <li>
+                  <a class="nav-link active" aria-current="page" href="GAP Monitor.html">GAP Monitor</a>
                 </li>
-            <li>
-                    <a class="nav-link active" aria-current="page" href="#">GAP Monitor</a>
-             </li>
-            <li>
-            <form class="d-flex" role="search">
+              <li>
+              </ul>
+           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit" style="background-color: black;"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+             </form>
         </div>
-        </div>
+      </div>
     </nav>
     <!--Pjesa e pagination-->
     <div class="container d-flex" id="#headDiv" >
@@ -130,120 +154,146 @@ h4 {
                 <div class="container d-flex">
                     <div class="col-4">
                         <div class="container">
-                            <figure class="figure">
-                                <img src="images/publikime1.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/68805_15_vjetori.pdf"><h6>15 Vjet GAP</h6></a>
-                              <!--Button per pdf-->
-                              <div>
-                                <button onclick="downloadPdf()">Download PDF</button>
-                              </div>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime4.png" class="figure-img img-fluid rounded">
-                              <a href=https://www.institutigap.org/documents/92059_Indeksi_transparences_2021_.pdf><h6>Indeksi i Transparencës Buxhetore të Komunave 2021v</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime7.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/82157_Thirrje%20p%C3%ABr%20aplikim%20per%20esete%20me%20te%20mira_2022%20V2_UNDP_GAP.pdf"><h6>Thirrje për aplikim</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime10.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/95681_Pagesat%20p%C3%ABr%20konsumin%20e%20energjis%C3%AB%20elektrike.pdf"><h6>Pagesat për konsumin e energjisë elektrike
-                                në komunat veriore në Kosovë</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime13.png" class="figure-img img-fluid rounded" >
-                             <a href="https://www.institutigap.org/documents/94416_Ndikimi%20i%20luftes%20ne%20Ukrain%20ne%20ekonomine%20e%20Kosoves.pdf"><h6>Ndikimi i luftës
-                                në Ukrainë
-                                në ekonominë e Kosovës</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime16.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/12511_paga_minimale.pdf"><h6>Kush ndikohet nga
-                                rritja e pagës minimale
-                                në Kosovë?</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime19.jpg" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/27041_qendrueshmeria_kapitale_.pdf"><h6>Qëndrueshmëria e investimeve
-                                kapitale të komunave</h6></a>
-                              </figure>
+                          <figure class="figure">
+                            <a href="images\15_vjetori.pdf" target="_blank">
+                           <img src="images/publikime1.png"  >
+                         </a>
+                         <h6>15 Vjet GAP</h6>
+                          <div>
+                            <button onclick="downloadPdf()">Download PDF</button>
+                          </div>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\Indeksi_transparences_2021_.pdf" target="_blank">
+                           <img src="images/publikime4.png" >
+                         </a>
+                         <h6>Indeksi i transparences</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\Thirrje për aplikim per esete me te mira_2022 V2_UNDP_GAP.pdf" target="_blank">
+                           <img src="images/publikime7.png" >
+                         </a>
+                         <h6>Thirrje per aplikim per studentes</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\Pagesat për konsumin e energjisë elektrike (1).pdf "target="_blank">
+                           <img src="images/publikime10.png" >
+                         </a>
+                         <h6>Pagesat per konsumin</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\Ndikimi i luftes ne Ukrain ne ekonomine e Kosoves.pdf "target="_blank">
+                           <img src="images/publikime13.png" >
+                         </a>
+                         <h6>Ndikimi i luftes ne Ukraine</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href=" images\paga_minimale.pdf"target="_blank">
+                           <img src="images/publikime16.png" >
+                         </a>
+                         <h6>Kush ndikohet nga
+                          rritja e pagës minimale
+                          në Kosovë?</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href=" images\qendrueshmeria_kapitale_.pdf"target="_blank">
+                           <img src="images/publikime19.jpg" >
+                         </a>
+                         <h6>Qendrueshmeria e investimeve kapitale</h6>
+                          </figure>
                         </div>
                     </div>
                     <!--Ana  e mesme-->
                     <div class="col-4">
                         <div class="container">
                             <figure class="figure">
-                                <img src="images/publikime2.png" class="figure-img img-fluid rounded">
-                                <a href="https://www.institutigap.org/documents/64236_nderrmarrjet_publike_f.pdf"><h6>Menaxhimi financiar
-                                    dhe transparenca në
-                                    ndërmarrjet publike</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime5.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/32258_projektbuxheti_2023_SHQ(f).pdf"><h6>Projektbuxheti 2023
-                                Analizë e të hyrave dhe
-                                shpenzimeve buxhetore</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime8.png" class="figure-img img-fluid rounded" >
-                             <a href="https://www.institutigap.org/documents/35612_konfiskimi_pasurise(f).pdf"><h6>Konfiskimi dhe sekuestrimi
-                                i pasurisë së jashtëligjshme</h6></a>
-                              </figure>
-                              <figure class="figure">
-                              <img src="images/publikime11.png" class="figure-img img-fluid rounded">
-                              <a href="https://www.institutigap.org/documents/27588_skema_sociale.pdf"><h6>Reformimi i Skemës së
-                                Ndihmës Sociale</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime14.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/62170_Ligji%20per%20buxhet%202022.pdf"><h6>Ligji për Buxhet 2022</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime17.png" class="figure-img img-fluid rounded">
-                              <a href="https://www.institutigap.org/documents/98955_Vendimet_e_Qeverise_2021_.pdf"><h6>Vendimet e Qeverisë së Kosovës gjatë
-                                vitit 2021 nga perspektiva sektoriale,
-                                gjinore dhe buxhetore</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime20.png" class="figure-img img-fluid rounded">
-                              <a href="https://www.institutigap.org/documents/98090_Rritja%20e%20cmimeve.pdf"><h6>Rritja e çmimeve në Kosovë
-                                dhe masat e mundshme për përballimin e inflacionit</h6></a>
-                              </figure>
+                              <a href="images\nderrmarrjet_publike_f.pdf" target="_blank">
+                             <img src="images/publikime2.png" >
+                           </a>
+                           <h6>Menaxhimi financiar
+                            dhe transparenca në
+                            ndërmarrjet publike</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="iimages\projektbuxheti_2023_SHQ(f).pdf" target="_blank">
+                             <img src="images/publikime5.png" >
+                           </a>
+                           <h6>Projekt buxheti</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="images\konfiskimi_pasurise(f).pdf" target="_blank">
+                             <img src="images/publikime8.png" >
+                           </a>
+                           <h6>Konfiskimi dhe sekuestrimi</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="images\skema_sociale.pdf" target="_blank">
+                             <img src="images/publikime11.png" >
+                           </a>
+                           <h6>Skema sociale</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="images\Ligji per buxhet 2022.pdf" target="_blank">
+                             <img src="images/publikime14.png" >
+                           </a>
+                           <h6>Ligji per buxhet</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="images\Vendimet_e_Qeverise_2021_.pdf" target="_blank">
+                             <img src="images/publikime17.png" >
+                           </a>
+                           <h6>Vendimet e Qeverise</h6>
+                            </figure>
+                            <figure class="figure">
+                              <a href="images\Rritja e cmimeve.pdf" target="_blank">
+                             <img src="images/publikime20.png" >
+                           </a>
+                           <h6>Rritja e çmimeve në Kosovë
+                              dhe masat e mundshme për përballimin e inflacionit</h6>
+                            </figure>  
+                             
+                             
                         </div>
                     </div>
                     <!--Ana e djathte-->
                     <div class="col-4">
                         <div class="container">
-                            <figure class="figure">
-                                <img src="images/publikime3.png" class="figure-img img-fluid rounded">
-                                <a href="https://www.institutigap.org/documents/35265_Rezervat%20e%20Qeverise%20se%20Kosoves%20(1).pdf"><h6>Rezervat buxhetore të 
-                                    Qeverisë së Kosovës</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime6.png" class="figure-img img-fluid rounded">
-                              <a href="https://www.institutigap.org/documents/97717_kontrolli_cmimeve(f).pdf"><h6>Si ndikon në inflacion kontrolli
-                                i çmimeve të produkteve?</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime9.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/92435_baza_e_re_ligjore.pdf"><h6>Çfarë parasheh baza e re ligjore
-                                e pushtetit lokal në Kosovë?</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime12.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/25613_Ndikimi%20i%20t%C3%ABrheqjes%20s%C3%AB%20kursimeve%20pensionale.pdf"><h6>Ndikimi i tërheqjes së kursimeve
-                                pensionale deri në 30% </h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime15.png" class="figure-img img-fluid rounded" >
-                              <a href="https://www.institutigap.org/documents/93517_fondi_ekselences.pdf"><h6>Themelimi i Njësisë për Ekspertizë</h6></a>
-                              </figure>
-                              <figure class="figure">
-                                <img src="images/publikime18.png" class="figure-img img-fluid rounded">
-                              <a href="https://www.institutigap.org/documents/81806_ligji_per_qeverine_.pdf"><h6>15 vjet përpjekje për
-                                aprovimin e Ligjit për Qeverinë</h6></a>
-                              </figure>
+                          <figure class="figure">
+                            <a href="images\Rezervat e Qeverise se Kosoves (1).pdf" target="_blank">
+                           <img src="images/publikime3.png" >
+                         </a>
+                         <h6>Rezervat Buxhetore</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\kontrolli_cmimeve(f).pdf" target="_blank">
+                           <img src="images/publikime6.png" >
+                         </a>
+                         <h6>Si ndikon inflacioni, kontrolli i cmimeve te produkteve?</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\baza_e_re_ligjore.pdf" target="_blank">
+                           <img src="images/publikime9.png" >
+                         </a>
+                         <h6>Baza e re ligjore</h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\Ndikimi i tërheqjes së kursimeve pensionale.pdf" target="_blank">
+                           <img src="images/publikime12.png" >
+                         </a>
+                         <h6>BNdikimi i terheqjes </h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\fondi_ekselences.pdf" target="_blank">
+                           <img src="images/publikime15.png" >
+                         </a>
+                         <h6>Fondi i ekselences </h6>
+                          </figure>
+                          <figure class="figure">
+                            <a href="images\ligji_per_qeverine_.pdf" target="_blank">
+                           <img src="images/publikime18.png" >
+                         </a>
+                         <h6>Ligji per qeverine </h6>
+                          </figure>
                         </div>
                     </div>
                 </div>
@@ -371,7 +421,7 @@ h4 {
     function downloadPdf() {
       const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
-      const fileUrl = 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
+      const fileUrl = 'C:\Users\Nurdanehome\Desktop\Institute project\images\15_vjetori.pdf';
       const fileName = '15 VJET GAP';
 
       fetch(proxyUrl + fileUrl)
@@ -389,10 +439,71 @@ h4 {
   </script>
 
 
+<script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
+<script>
+  function readPDF (){
+  const canvas = document.getElementById('pdf-canvas');
+
+  // get the PDF file using PDF.js
+  const pdfjsLib = window['pdfjs-dist/build/pdf'];
+  pdfjsLib.getDocument('15_vjetori.pdf').promise.then((pdf) => {
+    // get the first page of the PDF file
+    pdf.getPage(1).then((page) => {
+      const viewport = page.getViewport({ scale: 1.0 });
+      canvas.width = viewport.width;
+      canvas.height = viewport.height;
+
+      // render the PDF file on the canvas element
+      const ctx = canvas.getContext('2d');
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport,
+      };
+      page.render(renderContext);
+    });
+  });
+}
+</script>
+
+
+<canvas id="pdf-canvas"></canvas>
+
+<script src="https://pdfjs.express/3.0.0/pdf.min.js"></script>
+
+
+
+
+<script>
+ function readPDF (){
+  const viewer = new PDFTron.WebViewer({
+    path: 'https://pdfjs.express',
+    initialDoc: 'yourfile.pdf',
+  }, document.getElementById('viewer'));
+
+  
+  viewer.docViewer.on('documentLoaded', () => {
+    
+    viewer.docViewer.getDocument().then((doc) => {
+      doc.getText(1).then((text) => {
+        console.log(text);
+      });
+    });
+  });
+}
+</script>
+<div id="viewer"></div>
+
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
   </body>
   </html>
