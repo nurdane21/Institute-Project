@@ -40,7 +40,25 @@
             align-items: stretch;
             align-content: stretch;
         }
-      
+        hr{
+    
+    color: #f7931d;
+}
+h4.col-12 {
+    text-align: left;
+    color: #f7931d;
+    
+}
+h4 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+} 
+
         
     </style>
     <!--Pjesa e navbar-->
@@ -353,7 +371,7 @@
     function downloadPdf() {
       const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
-      const fileUrl = 'https://www.institutigap.org/documents/68805_15_vjetori.pdf';
+      const fileUrl = 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf';
       const fileName = '15 VJET GAP';
 
       fetch(proxyUrl + fileUrl)
